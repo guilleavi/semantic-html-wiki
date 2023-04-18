@@ -1,0 +1,14 @@
+{
+  "name": "semantic-html-wiki",
+  "version": "1.0.0",
+  "description": "Semantic HTML and A11y Sample",
+  "private": "true",
+  "scripts": {},
+  "author": "GuilleAvi",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
