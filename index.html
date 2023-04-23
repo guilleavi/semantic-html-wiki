@@ -26,8 +26,8 @@
           <button class="hamburger-menu__button">
             <img class="hamburger-menu__icon"
                  src="./static/svgs/humburger_menu_icon.svg"
-                 height="24px"
-                 width="24px"
+                 height="24"
+                 width="24"
                  alt="Hamburger Toggle Icon">
           </button>
           <nav class="hamburger-menu__nav"
@@ -60,18 +60,18 @@
           <a href="https://en.wikipedia.org/wiki/Main_Page">
             <img class="page-logo__image"
                  src="./static/svgs/wikipedia-logo.png"
-                 height="50px"
-                 width="50px"
+                 height="50"
+                 width="50"
                  alt="">
             <img class="page-logo__title"
                  src="./static/svgs/wikipedia-logo__title.svg"
-                 height="18px"
-                 width="120px"
+                 height="18"
+                 width="120"
                  alt="">
             <img class="page-logo__subtitle"
                  src="./static/svgs/wikipedia-logo__subtitle.svg"
-                 height="13px"
-                 width="117px"
+                 height="13"
+                 width="117"
                  alt="">
           </a>
         </li>
@@ -96,8 +96,8 @@
           <button class="more-options-menu__button">
             <img class="more-options-menu__icon"
                  src="./static/svgs/three_dots_icon.svg"
-                 height="24px"
-                 width="24px"
+                 height="24"
+                 width="24"
                  alt="More Options Toggle Icon">
           </button>
           <nav class="more-options-menu__nav"
@@ -158,24 +158,15 @@
         </nav>
       </aside>
       <header class="article-header">
-        <nav>
-          <ul>
-            <li class="article-header__index-icon">
-              <img src="./static/svgs/list_icon.svg"
-                   height="35px"
-                   width="45px"
-                   alt="">
-            </li>
-            <li class="article-header__title">
-              <h1>Pangaea</h1>
-            </li>
-            <li class="article-header__languages-selection">
-              <select>
-                <option>100 languages</option>
-              </select>
-            </li>
-          </ul>
-        </nav>
+        <img class="article-header__index-icon"
+             src="./static/svgs/list_icon.svg"
+             height="35"
+             width="45"
+             alt="">
+        <h1 class="article-header__title">Pangaea</h1>
+        <select class="article-header__languages-selection">
+          <option>100 languages</option>
+        </select>
       </header>
       <nav class="article-options">
         <ul>
@@ -198,13 +189,13 @@
           </li>
           <li>
             <img src="./static/svgs/protection_icon.svg"
-                 height="20px"
-                 width="20px"
+                 height="20"
+                 width="20"
                  alt="">
           </li>
         </ul>
       </nav>
-      <section class="article-disambiguation">
+      <div class="article-disambiguation">
         <p>
           For other uses, see
           <a href="https://en.wikipedia.org/wiki/Pangaea_(disambiguation)">Pangaea (disambiguation)</a>.
@@ -213,8 +204,8 @@
           "Pangaia" redirects here. For for the Southeast Asian (and later African) native warships, see
           <a href="https://en.wikipedia.org/wiki/Penjajap">Penjajap</a>.
         </p>
-      </section>
-      <section id="definition">
+      </div>
+      <div id="definition">
         <p>
           <strong>Pangaea</strong> or <strong>Pangea</strong>
           <a href="https://en.wikipedia.org/wiki/Help:IPA/English">(/pænˈdʒiː.ə/)</a>
@@ -232,15 +223,15 @@
         </p>
         <figure>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Pangaea_200Ma.jpg/330px-Pangaea_200Ma.jpg"
-               height="162px"
-               width="330px"
+               height="162"
+               width="330"
                alt="Pangea Map">
           <figcaption>
             The supercontinent Pangaea in the early Mesozoic (at 200
             <a href="https://en.wikipedia.org/wiki/Megaannum">Ma</a>)
           </figcaption>
         </figure>
-      </section>
+      </div>
       <section id="Origin_of_the_concept">
         <header>
           <h2>Origin of the concept</h2>
@@ -806,6 +797,8 @@
           <div>
             <figure>
               <img src="./static/svgs/commons-logo.webp"
+                   height="40"
+                   width="30"
                    alt="">
               <figcaption>
                 Wikimedia Commons has media related to
@@ -814,6 +807,8 @@
             </figure>
             <figure>
               <img src="./static/svgs/wiktionary-logo.webp"
+                   height="16"
+                   width="16"
                    alt="">
               <figcaption>Look up
                 <a href="https://en.wiktionary.org/wiki/Pangaea">Pangaea</a>
@@ -845,103 +840,131 @@
                   </li>
                 </ul>
               </nav>
-              <h4>
+              <h3>
                 <a href="https://en.wikipedia.org/wiki/Continent">Continents</a>
                 of
                 <a href="https://en.wikipedia.org/wiki/Earth">Earth</a>
-              </h4>
+              </h3>
               [<button>hide</button>]
             </header>
-            <section>
+            <div>
               <nav>
                 <ul>
                   <li>
                     <figure>
                       <a href="https://en.wikipedia.org/wiki/Africa">
                         <img src="./static/svgs/maps/africa.png"
+                             height="75"
+                             width="75"
                              alt="">
                       </a>
-                      <a href="https://en.wikipedia.org/wiki/Africa">
-                        <figcaption>Africa</figcaption>
-                      </a>
+                      <figcaption>
+                        <a href="https://en.wikipedia.org/wiki/Africa">Africa</a>
+                      </figcaption>
                     </figure>
                   </li>
                   <li>
                     <figure>
                       <a href="https://en.wikipedia.org/wiki/Antarctica">
                         <img src="./static/svgs/maps/antarctica.png"
+                             height="75"
+                             width="75"
                              alt="">
                       </a>
-                      <a href="https://en.wikipedia.org/wiki/Antarctica">
-                        <figcaption>Antarctica</figcaption>
-                      </a>
+                      <figcaption>
+                        <a href="https://en.wikipedia.org/wiki/Antarctica">
+                          Antarctica
+                        </a>
+                      </figcaption>
                     </figure>
                   </li>
                   <li>
                     <figure>
                       <a href="https://en.wikipedia.org/wiki/Asia">
                         <img src="./static/svgs/maps/asia.png"
+                             height="75"
+                             width="75"
                              alt="">
                       </a>
-                      <a href="https://en.wikipedia.org/wiki/Asia">
-                        <figcaption>Asia</figcaption>
-                      </a>
+                      <figcaption>
+                        <a href="https://en.wikipedia.org/wiki/Asia">
+                          Asia
+                        </a>
+                      </figcaption>
                     </figure>
                   </li>
                   <li>
                     <figure>
                       <a href="https://en.wikipedia.org/wiki/Australia_(continent)">
                         <img src="./static/svgs/maps/australia.png"
+                             height="75"
+                             width="75"
                              alt="">
                       </a>
-                      <a href="https://en.wikipedia.org/wiki/Australia_(continent)">
-                        <figcaption>Australia</figcaption>
-                      </a>
+                      <figcaption>
+                        <a href="https://en.wikipedia.org/wiki/Australia_(continent)">
+                          Australia
+                        </a>
+                      </figcaption>
                     </figure>
                   </li>
                   <li>
                     <figure>
                       <a href="https://en.wikipedia.org/wiki/Europe">
                         <img src="./static/svgs/maps/europe.png"
+                             height="75"
+                             width="75"
                              alt="">
                       </a>
-                      <a href="https://en.wikipedia.org/wiki/Europe">
-                        <figcaption>Europe</figcaption>
-                      </a>
+                      <figcaption>
+                        <a href="https://en.wikipedia.org/wiki/Europe">
+                          Europe
+                        </a>
+                      </figcaption>
                     </figure>
                   </li>
                   <li>
                     <figure>
                       <a href="https://en.wikipedia.org/wiki/North_America">
                         <img src="./static/svgs/maps/north-america.png"
+                             height="75"
+                             width="75"
                              alt="">
                       </a>
-                      <a href="https://en.wikipedia.org/wiki/North_America">
-                        <figcaption>North America</figcaption>
-                      </a>
+                      <figcaption>
+                        <a href="https://en.wikipedia.org/wiki/North_America">
+                          North America
+                        </a>
+                      </figcaption>
                     </figure>
                   </li>
                   <li>
                     <figure>
                       <a href="https://en.wikipedia.org/wiki/South_America">
                         <img src="./static/svgs/maps/south-america.png"
+                             height="75"
+                             width="75"
                              alt="">
                       </a>
-                      <a href="https://en.wikipedia.org/wiki/South_America">
-                        <figcaption>South America</figcaption>
-                      </a>
+                      <figcaption>
+                        <a href="https://en.wikipedia.org/wiki/South_America">
+                          South America
+                        </a>
+                      </figcaption>
                     </figure>
                   </li>
                 </ul>
               </nav>
-            </section>
-            <section>
+            </div>
+            <div>
               <nav>
                 <ul>
                   <li>
                     <figure>
                       <a href="https://en.wikipedia.org/wiki/Afro-Eurasia">
                         <img src="./static/svgs/maps/afro-eurasia.png"
+                             height="75"
+                             width="75"
                              alt="">
                       </a>
                       <figcaption>
@@ -954,6 +977,8 @@
                     <figure>
                       <a href="https://en.wikipedia.org/wiki/Americas">
                         <img src="./static/svgs/maps/america.png"
+                             height="75"
+                             width="75"
                              alt="">
                       </a>
                       <figcaption>
@@ -966,6 +991,8 @@
                     <figure>
                       <a href="https://en.wikipedia.org/wiki/Eurasia">
                         <img src="./static/svgs/maps/eurasia.png"
+                             height="75"
+                             width="75"
                              alt="">
                       </a>
                       <figcaption>
@@ -977,6 +1004,8 @@
                     <figure>
                       <a href="https://en.wikipedia.org/wiki/Oceania">
                         <img src="./static/svgs/maps/oceania.png"
+                             height="75"
+                             width="75"
                              alt="">
                       </a>
                       <figcaption>
@@ -986,10 +1015,12 @@
                   </li>
                 </ul>
               </nav>
-            </section>
-            <section>
+            </div>
+            <div>
               <section>
-                <h5>Prehistoric <a href="https://en.wikipedia.org/wiki/Supercontinent">supercontinents</a></h5>
+                <header>
+                  <h4>Prehistoric <a href="https://en.wikipedia.org/wiki/Supercontinent">supercontinents</a></h4>
+                </header>
                 <ul>
                   <li><a href="https://en.wikipedia.org/wiki/Columbia_(supercontinent)">Columbia</a></li>
                   <li><a href="https://en.wikipedia.org/wiki/Gondwana">Gondwana</a></li>
@@ -1004,7 +1035,9 @@
                 </ul>
               </section>
               <section>
-                <h5>Other prehistoric continents</h5>
+                <header>
+                  <h4>Other prehistoric continents</h4>
+                </header>
                 <ul>
                   <li><a href="https://en.wikipedia.org/wiki/Amazonian_Craton">Amazonia</a></li>
                   <li><a href="https://en.wikipedia.org/wiki/Arctica">Arctica</a></li>
@@ -1029,16 +1062,18 @@
                   <li><a href="https://en.wikipedia.org/wiki/South_China_Craton">South China</a></li>
                 </ul>
               </section>
-            </section>
-            <section>
+            </div>
+            <div>
               <section>
-                <h5>
-                  <a href="https://en.wikipedia.org/wiki/Submerged_continent">Submerged continent</a>
-                  /
-                  <a href="https://en.wikipedia.org/wiki/Continental_shelf">lands</a>
-                  and
-                  <a href="https://en.wikipedia.org/wiki/Continental_fragment">microcontinents</a>
-                </h5>
+                <header>
+                  <h4>
+                    <a href="https://en.wikipedia.org/wiki/Submerged_continent">Submerged continent</a>
+                    /
+                    <a href="https://en.wikipedia.org/wiki/Continental_shelf">lands</a>
+                    and
+                    <a href="https://en.wikipedia.org/wiki/Continental_fragment">microcontinents</a>
+                  </h4>
+                </header>
                 <ul>
                   <li><a href="https://en.wikipedia.org/wiki/Beringia">Beringia</a></li>
                   <li><a href="https://en.wikipedia.org/wiki/Doggerland">Doggerland</a></li>
@@ -1053,7 +1088,9 @@
                 </ul>
               </section>
               <section>
-                <h5>Possible future supercontinents</h5>
+                <header>
+                  <h4>Possible future supercontinents</h4>
+                </header>
                 <ul>
                   <li><a href="https://en.wikipedia.org/wiki/Amasia_(continent)">Amasia</a></li>
                   <li><a href="https://en.wikipedia.org/wiki/Aurica_(supercontinent)">Aurica</a></li>
@@ -1062,14 +1099,16 @@
                 </ul>
               </section>
               <section>
-                <h5>
-                  <a href="https://en.wikipedia.org/wiki/List_of_mythological_places">Mythical</a>
-                  ,
-                  <a href="https://en.wikipedia.org/wiki/List_of_lost_lands">lost</a>
-                  , and
-                  <a href="https://en.wikipedia.org/wiki/Phantom_island">hypothesised</a>
-                  continents
-                </h5>
+                <header>
+                  <h4>
+                    <a href="https://en.wikipedia.org/wiki/List_of_mythological_places">Mythical</a>
+                    ,
+                    <a href="https://en.wikipedia.org/wiki/List_of_lost_lands">lost</a>
+                    , and
+                    <a href="https://en.wikipedia.org/wiki/Phantom_island">hypothesised</a>
+                    continents
+                  </h4>
+                </header>
                 <ul>
                   <li><a href="https://en.wikipedia.org/wiki/Atlantis">Atlantis</a></li>
                   <li><a href="https://en.wikipedia.org/wiki/Hyperborea">Hyperborea</a></li>
@@ -1081,7 +1120,9 @@
                 </ul>
               </section>
               <section>
-                <h5><a href="https://en.wikipedia.org/wiki/Continent#Subcontinents">Subcontinents</a></h5>
+                <header>
+                  <h4><a href="https://en.wikipedia.org/wiki/Continent#Subcontinents">Subcontinents</a></h4>
+                </header>
                 <ul>
                   <li><a href="https://en.wikipedia.org/wiki/Alaska">Alaska</a></li>
                   <li><a href="https://en.wikipedia.org/wiki/Arabian_Peninsula">Arabia</a></li>
@@ -1091,13 +1132,17 @@
                   <li><a href="https://en.wikipedia.org/wiki/Southern_Cone">Southern Cone</a></li>
                 </ul>
               </section>
-            </section>
+            </div>
             <section>
-              <h5>See also:</h5>
+              <header>
+                <h4>See also:</h4>
+              </header>
               <ul>
                 <li>
                   <a href="https://en.wikipedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg">
                     <img src="./static/svgs/world-icon.webp"
+                         height="16"
+                         width="16"
                          alt="">
                   </a>
                   <a href="https://en.wikipedia.org/wiki/Portal:World">World portal</a>
@@ -1110,6 +1155,8 @@
                 </li>
                 <li>
                   <img src="./static/svgs/category-icon.webp"
+                       height="16"
+                       width="16"
                        alt="">
                   <a href="https://en.wikipedia.org/wiki/Category:Continents">Category</a>
                 </li>
@@ -1119,14 +1166,18 @@
               </ul>
             </section>
             <section>
-              <h5>
-                <a href="https://en.wikipedia.org/wiki/Help:Authority_control">Authority control</a>
-                : National
-                <a href="https://www.wikidata.org/wiki/Q4398#identifiers">
-                  <img src="./static/svgs/edit-icon.webp"
-                       alt="">
-                </a>
-              </h5>
+              <header>
+                <h4>
+                  <a href="https://en.wikipedia.org/wiki/Help:Authority_control">Authority control</a>
+                  : National
+                  <a href="https://www.wikidata.org/wiki/Q4398#identifiers">
+                    <img src="./static/svgs/edit-icon.webp"
+                         height="10"
+                         width="10"
+                         alt="">
+                  </a>
+                </h4>
+              </header>
               <ul>
                 <li><a href="https://catalogue.bnf.fr/ark:/12148/cb12500043k">France</a></li>
                 <li><a href="https://data.bnf.fr/ark:/12148/cb12500043k">BnF data</a></li>
@@ -1201,16 +1252,16 @@
         <li>
           <button>
             <img src="./static/svgs/wikimedia-project.png"
-                 height="31px"
-                 width="88px"
+                 height="31"
+                 width="88"
                  alt="">
           </button>
         </li>
         <li>
           <button>
             <img src="./static/svgs/poweredby_mediawiki.png"
-                 height="31px"
-                 width="88px"
+                 height="31"
+                 width="88"
                  alt="">
           </button>
         </li>
