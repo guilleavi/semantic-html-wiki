@@ -1,49 +1,1223 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Semantic HTML & A11y</title>
+  <meta charset="utf-8">
+  <title>Semantic HTML & A11y</title>
+  <!-- <link rel="stylesheet"
+          href="./styles/style.css">
     <link rel="stylesheet"
-          href="./style.css">
-    <script src="//localhost:35729/livereload.js?snipver=1"></script>
+          href="./styles/temp.css">
+    <link rel="stylesheet"
+          href="./styles/article.css"> -->
+  <link href="https://fonts.cdnfonts.com/css/linux-libertine-o"
+        rel="stylesheet">
+  <link rel="icon"
+        type="image/x-icon"
+        href="/favicon.ico">
+  <script src="//localhost:35729/livereload.js?snipver=1"></script>
 </head>
 
 <body>
-    <main>
-        <article>
-            <nav class="main-nav">.</nav>
-            <header>
-                <h1>Pangaea!</h1>
-                <p>From Wikipedia, the free encyclopedia</p>
-            </header>
-            <aside>
-                For other uses, see
-                <a href="https://en.wikipedia.org/wiki/Pangaea_(disambiguation)">Pangaea (disambiguation)</a>.
-                "Pangaia" redirects here. For for the Southeast Asian (and later African) native warships, see
-                <a href="https://en.wikipedia.org/wiki/Penjajap">Penjajap</a>.
-            </aside>
-            <section>
-                <strong>Pangaea</strong> or <strong>Pangea</strong> (/pænˈdʒiː.ə/)<sup>[1]</sup>
-                was a supercontinent that existed during the late Paleozoic and early Mesozoic eras.<sup>[2]</sup>
-                It assembled from the earlier continental units of Gondwana, Euramerica and Siberia during the
-                Carboniferous approximately 335 million years ago, and began to break apart about 200
-                million years ago, at the end of the Triassic and beginning of the Jurassic.<sup>[3]</sup>
-                In contrast to the present Earth and its distribution of continental mass,
-                Pangaea was centred on the equator and surrounded by the superocean Panthalassa and the
-                Paleo-Tethys and subsequent Tethys Oceans. Pangaea is the most recent supercontinent to have
-                existed and the first to be reconstructed by geologists.
-            </section>
-            <aside>
-                <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Pangaea_200Ma.jpg/330px-Pangaea_200Ma.jpg"
-                         alt="Pangea Map">
-                    <figcaption>The supercontinent Pangaea in the early Mesozoic (at 200 Ma)</figcaption>
-                </figure>
-            </aside>
+  <header class="page-header">
+    <nav class="page-header__nav">
+      <ul>
+        <li class="hamburger-menu">
+          <button class="hamburger-menu__button">
+            <img class="hamburger-menu__icon"
+                 src="./static/svgs/humburger_menu_icon.svg"
+                 height="24px"
+                 width="24px"
+                 alt="Hamburger Toggle Icon">
+          </button>
+          <nav class="hamburger-menu__nav"
+               style="display: none">
+            <ul>
+              <li>Main menu </li>
+              <li><a href="https://en.wikipedia.org/wiki/Main_Page">Main page</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Wikipedia:Contents">Contents</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Portal:Current_events">Current events</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Special:Random">Random article</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</a></li>
+              <li> <a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a> </li>
+              <li><a
+                   href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&utm_medium=sidebar&utm_campaign=C13_en.wikipedia.org&uselang=en">
+                  Donate
+                </a>
+              </li>
+              <li>Contribute</li>
+              <li><a href="https://en.wikipedia.org/wiki/Help:Contents">Help</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Help:Introduction">Learn to edit</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal">Community portal</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Special:RecentChanges">Recent changes</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Wikipedia:File_upload_wizard">Upload file</a></li>
+              <li>Languages</li>
+            </ul>
+            <p>Language links are at the top of the page across from the title.</p>
+          </nav>
+        </li>
+        <li class="page-logo">
+          <a href="https://en.wikipedia.org/wiki/Main_Page">
+            <img class="page-logo__image"
+                 src="./static/svgs/wikipedia-logo.png"
+                 height="50px"
+                 width="50px"
+                 alt="">
+            <img class="page-logo__title"
+                 src="./static/svgs/wikipedia-logo__title.svg"
+                 height="18px"
+                 width="120px"
+                 alt="">
+            <img class="page-logo__subtitle"
+                 src="./static/svgs/wikipedia-logo__subtitle.svg"
+                 height="13px"
+                 width="117px"
+                 alt="">
+          </a>
+        </li>
+        <li class="search-bar">
+          <input class="search-bar__input"
+                 type="text">
+          <button class="search-bar__button">
+            Search
+          </button>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Pangaea">
+            Create account
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Pangaea">
+            Log in
+          </a>
+        </li>
+        <li class="more-options-menu">
+          <button class="more-options-menu__button">
+            <img class="more-options-menu__icon"
+                 src="./static/svgs/three_dots_icon.svg"
+                 height="24px"
+                 width="24px"
+                 alt="More Options Toggle Icon">
+          </button>
+          <nav class="more-options-menu__nav"
+               style="display: none">
+            <ul>
+              <li>
+                Pages for logged out editors <a href="https://en.wikipedia.org/wiki/Help:Introduction">(learn more)</a>
+              </li>
+              <li><a href="https://en.wikipedia.org/wiki/Special:MyContributions">Contributions</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Special:MyTalk">Talk</a></li>
+            </ul>
+          </nav>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-content">
+    <article>
+      <aside class="article-index">
+        <nav>
+          <ul>
+            <li>Contents <a href="">[hide]</a></li>
+            <li><a href="#">(Top)</a></li>
+            <li><a href="#Origin_of_the_concept">Origin of the concept</a></li>
+            <li><a href="#Evidence_of_existence">Evidence of existence</a></li>
+            <li>
+              <a href="#Formation">Formation</a>
+              <ul>
+                <li><a href="#Previous_supercontinents">Previous supercontinents</a></li>
+                <li><a href="#Formation_of_Euramerica_(Laurussia)">Formation of Euramerica (Laurussia)</a></li>
+                <li><a href="#Collision_of_Gondwana_with_Euramerica">Collision of Gondwana with Euramerica</a></li>
+                <li><a href="#Formation_of_Laurasia">Formation of Laurasia</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#Life">Life</a>
+              <ul>
+                <li><a href="#Mass_extinctions">Mass extinctions</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#Rifting_and_break-up">Rifting and break-up</a>
+              <ul>
+                <li><a href="#Opening_of_the_Atlantic">Opening of the Atlantic</a></li>
+                <li><a href="#Break-up_of_Gondwana">Break-up of Gondwana</a></li>
+                <li>
+                  <a href="#Opening_of_the_Norwegian_Sea_and_break-up_of_Australia_and_Antarctica">
+                    Opening of the Norwegian Sea and break-up of Australia and Antarctica
+                  </a>
+                </li>
+                <li><a href="#Climate_change_after_Pangaea">Climate change after Pangaea</a></li>
+              </ul>
+            </li>
+            <li><a href="#See_also">See also</a></li>
+            <li><a href="#References">References</a></li>
+            <li><a href="#External_links">External links</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <header class="article-header">
+        <nav>
+          <ul>
+            <li class="article-header__index-icon">
+              <img src="./static/svgs/list_icon.svg"
+                   height="35px"
+                   width="45px"
+                   alt="">
+            </li>
+            <li class="article-header__title">
+              <h1>Pangaea</h1>
+            </li>
+            <li class="article-header__languages-selection">
+              <select>
+                <option>100 languages</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <nav class="article-options">
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Pangaea">Article</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Talk:Pangaea">Talk</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Pangaea">Read</a></li>
+          <li><a href="https://en.wikipedia.org/w/index.php?title=Pangaea&action=edit">View source</a></li>
+          <li><a href="https://en.wikipedia.org/w/index.php?title=Pangaea&action=history">View history</a></li>
+          <li>
+            <select>
+              <option value="">Tools</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+      <nav class="article-protection">
+        <ul>
+          <li>
+            <p>From Wikipedia, the free encyclopedia</p>
+          </li>
+          <li>
+            <img src="./static/svgs/protection_icon.svg"
+                 height="20px"
+                 width="20px"
+                 alt="">
+          </li>
+        </ul>
+      </nav>
+      <section class="article-disambiguation">
+        <p>
+          For other uses, see
+          <a href="https://en.wikipedia.org/wiki/Pangaea_(disambiguation)">Pangaea (disambiguation)</a>.
+        </p>
+        <p>
+          "Pangaia" redirects here. For for the Southeast Asian (and later African) native warships, see
+          <a href="https://en.wikipedia.org/wiki/Penjajap">Penjajap</a>.
+        </p>
+      </section>
+      <section id="definition">
+        <p>
+          <strong>Pangaea</strong> or <strong>Pangea</strong>
+          <a href="https://en.wikipedia.org/wiki/Help:IPA/English">(/pænˈdʒiː.ə/)</a>
+          <sup><a href="#cite_note-1">[1]</a></sup>
+          was a supercontinent that existed during the late Paleozoic and early Mesozoic eras.
+          <sup><a href="#cite_note-2">[2]</a></sup>
+          It assembled from the earlier continental units of Gondwana, Euramerica and Siberia during the
+          Carboniferous approximately 335 million years ago, and began to break apart about 200
+          million years ago, at the end of the Triassic and beginning of the Jurassic.
+          <sup><a href="#cite_note-3">[3]</a></sup>
+          In contrast to the present Earth and its distribution of continental mass,
+          Pangaea was centred on the equator and surrounded by the superocean Panthalassa and the
+          Paleo-Tethys and subsequent Tethys Oceans. Pangaea is the most recent supercontinent to have
+          existed and the first to be reconstructed by geologists.
+        </p>
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Pangaea_200Ma.jpg/330px-Pangaea_200Ma.jpg"
+               height="162px"
+               width="330px"
+               alt="Pangea Map">
+          <figcaption>
+            The supercontinent Pangaea in the early Mesozoic (at 200
+            <a href="https://en.wikipedia.org/wiki/Megaannum">Ma</a>)
+          </figcaption>
+        </figure>
+      </section>
+      <section id="Origin_of_the_concept">
+        <header>
+          <h2>Origin of the concept</h2>
+        </header>
+        <p>
+          The name "Pangaea" is derived from Ancient Greek pan (πᾶν, "all, entire, whole") and Gaia or Gaea (Γαῖα,
+          "Mother Earth, land").[4][9] The concept that the continents once formed a contiguous land mass was
+          hypothesised, with corroborating evidence, by Alfred Wegener, the originator of the scientific theory of
+          continental drift, in his 1912 publication The Origin of Continents (Die Entstehung der Kontinente).[10] He
+          expanded upon his hypothesis in his 1915 book The Origin of Continents and Oceans (Die Entstehung der
+          Kontinente und Ozeane), in which he postulated that, before breaking up and drifting to their present
+          locations, all the continents had formed a single supercontinent that he called the "Urkontinent".
 
-        </article>
-    </main>
+          The name "Pangaea" occurs in the 1920 edition of Die Entstehung der Kontinente und Ozeane, but only once, when
+          Wegener refers to the ancient supercontinent as "the Pangaea of the Carboniferous".[11] Wegener used the
+          Germanized form "Pangäa," but the name entered German and English scientific literature (in 1922[12] and 1926,
+          respectively) in the Latinized form "Pangaea" (of the Greek "Pangaia"), especially due to a symposium of the
+          American Association of Petroleum Geologists in November 1926.[13]
+
+          Wegener originally proposed that the breakup of Pangaea was due to centripetal forces from the Earth's
+          rotation acting on the high continents. However, this mechanism was easily shown to be physically implausible,
+          which delayed acceptance of the Pangaea hypothesis.[14] Arthur Holmes proposed the more plausible mechanism of
+          mantle convection,[15] which, together with evidence provided by the mapping of the ocean floor following the
+          Second World War, led to the development and acceptance of the theory of plate tectonics. This theory provides
+          the now widely-accepted explanation for the existence and breakup of Pangaea.[16]
+        </p>
+      </section>
+      <section id="Evidence_of_existence">
+        <header>
+          <h2>Evidence of existence</h2>
+        </header>
+        <p>
+          The geography of the continents bordering the Atlantic Ocean was the first evidence suggesting the existence
+          of Pangaea. The seemingly close fit of the coastlines of North and South America with Europe and Africa was
+          remarked on almost as soon as these coasts were charted. The first to suggest that these continents were once
+          joined and later separated may have been Abraham Ortelius in 1596.[17] Careful reconstructions showed that the
+          mismatch at the 500 fathoms (3,000 feet; 910 meters) contour was less than 130 km (81 mi), and it was argued
+          that this was much too good to be attributed to chance.[18]
+
+          Additional evidence for Pangaea is found in the geology of adjacent continents, including matching geological
+          trends between the eastern coast of South America and the western coast of Africa. The polar ice cap of the
+          Carboniferous Period covered the southern end of Pangaea. Glacial deposits, specifically till, of the same age
+          and structure are found on many separate continents that would have been together in the continent of
+          Pangaea.[19] The continuity of mountain chains provides further evidence, such as the Appalachian Mountains
+          chain extending from the southeastern United States to the Caledonides of Ireland, Britain, Greenland, and
+          Scandinavia.[20]
+
+          Fossil evidence for Pangaea includes the presence of similar and identical species on continents that are now
+          great distances apart. For example, fossils of the therapsid Lystrosaurus have been found in South Africa,
+          India and Antarctica, alongside members of the Glossopteris flora, whose distribution would have ranged from
+          the polar circle to the equator if the continents had been in their present position; similarly, the
+          freshwater reptile Mesosaurus has been found in only localized regions of the coasts of Brazil and West
+          Africa.[21]
+
+          Geologists can also determine the movement of continental plates by examining the orientation of magnetic
+          minerals in rocks. When rocks are formed, they take on the magnetic orientation of the Earth, showing which
+          direction the poles lie relative to the rock; this determines latitudes and orientations (though not
+          longitudes). Magnetic differences between samples of sedimentary and intrusive igneous rock whose age varies
+          by millions of years is due to a combination of magnetic polar wander (with a cycle of a few thousand years)
+          and the drifting of continents over millions of years. One can subtract the polar wander component, which is
+          identical for all contemporaneous samples, leaving the portion that shows continental drift and can be used to
+          help reconstruct earlier continental latitudes and orientations.[22]
+        </p>
+      </section>
+      <section id="Formation">
+        <header>
+          <h2>Formation</h2>
+        </header>
+        <p>
+          Pangaea is only the most recent supercontinent reconstructed from the geologic record. The formation of
+          supercontinents and their breakup appears to have been cyclical through Earth's history. There may have been
+          several others before Pangaea.
+
+          Paleomagnetic measurements help geologists determine the latitude and orientation of ancient continental
+          blocks, and newer techniques may help determine longitudes.[23] Paleontology helps determine ancient climates,
+          confirming latitude estimates from paleomagnetic measurements, and the distribution of ancient forms of life
+          provides clues on which continental blocks were close to each other at particular geological moments.[24]
+          However, reconstructions of continents prior to Pangaea, including the ones in this section, remain partially
+          speculative, and different reconstructions will differ in some details.[25]
+        </p>
+        <section id="Previous_supercontinents">
+          <header>
+            <h3>Previous supercontinents</h3>
+          </header>
+          <p>
+            The fourth-last supercontinent, called Columbia or Nuna, appears to have assembled in the period 2.0–1.8
+            billion years ago (Ga).[26][27] Columbia/Nuna broke up and the next supercontinent, Rodinia, formed from the
+            accretion and assembly of its fragments. Rodinia lasted from about 1.3 billion years ago until about 750
+            million years ago, but its exact configuration and geodynamic history are not nearly as well understood as
+            those of the later supercontinents, Pannotia and Pangaea.[28]
+
+            According to one reconstruction,[29] when Rodinia broke up, it split into three pieces: the supercontinent
+            of Proto-Laurasia, the supercontinent of Proto-Gondwana, and the smaller Congo craton. Proto-Laurasia and
+            Proto-Gondwana were separated by the Proto-Tethys Ocean. Next Proto-Laurasia itself split apart to form the
+            continents of Laurentia, Siberia, and Baltica. Baltica moved to the east of Laurentia, and Siberia moved
+            northeast of Laurentia. The splitting also created two new oceans, the Iapetus Ocean and Paleoasian
+            Ocean.[30] Most of the above masses coalesced again to form the relatively short-lived supercontinent of
+            Pannotia. This supercontinent included large amounts of land near the poles and, near the equator, only a
+            relatively small strip connecting the polar masses. Pannotia lasted until 540 Ma, near the beginning of the
+            Cambrian period and then broke up, giving rise to the continents of Laurentia, Baltica, and the southern
+            supercontinent of Gondwana.[31]
+          </p>
+        </section>
+        <section id="Formation_of_Euramerica_(Laurussia)">
+          <header>
+            <h3>Formation of Euramerica (Laurussia)</h3>
+          </header>
+          <p>
+            In the Cambrian period, the continent of Laurentia, which would later become North America, sat on the
+            equator, with three bordering oceans: the Panthalassic Ocean to the north and west, the Iapetus Ocean to the
+            south, and the Khanty Ocean to the east. In the Earliest Ordovician, around 480 Ma, the microcontinent of
+            Avalonia – a landmass incorporating fragments of what would become eastern Newfoundland, the southern
+            British Isles, and parts of Belgium, northern France, Nova Scotia, New England, South Iberia, and northwest
+            Africa – broke free from Gondwana and began its journey to Laurentia.[32] Baltica, Laurentia, and Avalonia
+            all came together by the end of the Ordovician to form a landmass called Euramerica or Laurussia, closing
+            the Iapetus Ocean. The collision also resulted in the formation of the northern Appalachians. Siberia sat
+            near Euramerica, with the Khanty Ocean between the two continents. While all this was happening, Gondwana
+            drifted slowly towards the South Pole. This was the first step of the formation of Pangaea.[33]
+          </p>
+        </section>
+        <section id="Collision_of_Gondwana_with_Euramerica">
+          <header>
+            <h3>Collision of Gondwana with Euramerica</h3>
+          </header>
+          <p>
+            The second step in the formation of Pangaea was the collision of Gondwana with Euramerica. By the middle of
+            the Silurian, 430 Ma, Baltica had already collided with Laurentia, forming Euramerica, an event called the
+            Caledonian orogeny. Avalonia had not yet collided with Laurentia, but as Avalonia inched towards Laurentia,
+            the seaway between them, a remnant of the Iapetus Ocean, was slowly shrinking. Meanwhile, southern Europe
+            broke off from Gondwana and began to move towards Euramerica across the Rheic Ocean. It collided with
+            southern Baltica in the Devonian.[34]
+
+            By the late Silurian, Annamia and South China split from Gondwana and started to head northward, shrinking
+            the Proto-Tethys Ocean in their path and opening the new Paleo-Tethys Ocean to their south. In the Devonian
+            Period, Gondwana itself headed towards Euramerica, causing the Rheic Ocean to shrink. In the Early
+            Carboniferous, northwest Africa had touched the southeastern coast of Euramerica, creating the southern
+            portion of the Appalachian Mountains, the Meseta Mountains, and the Mauritanide Mountains, an event called
+            the Variscan orogeny. South America moved northward to southern Euramerica, while the eastern portion of
+            Gondwana (India, Antarctica, and Australia) headed toward the South Pole from the equator. North and South
+            China were on independent continents. The Kazakhstania microcontinent had collided with Siberia. (Siberia
+            had been a separate continent for millions of years since the deformation of the supercontinent Pannotia in
+            the Middle Carboniferous.)[35]
+
+            The Variscan orogeny raised the Central Pangaean Mountains, which were comparable to the modern Himalayas in
+            scale. With Pangaea now stretching from the South Pole across the equator and well into the Northern
+            Hemisphere, an intense megamonsoon climate was established, except for a perpetually wet zone immediately
+            around the central mountains.[36]
+          </p>
+        </section>
+        <section id="Formation_of_Laurasia">
+          <header>
+            <h3>Formation of Laurasia</h3>
+          </header>
+          <p>
+            Western Kazakhstania collided with Baltica in the Late Carboniferous, closing the Ural Ocean between them
+            and the western Proto-Tethys in them (Uralian orogeny), causing the formation of not only the Ural
+            Mountains, but also the supercontinent of Laurasia. This was the last step of the formation of Pangaea.
+            Meanwhile, South America had collided with southern Laurentia, closing the Rheic Ocean and completing the
+            Variscian orogeny with the formation the southernmost part of the Appalachians and Ouachita Mountains. By
+            this time, Gondwana was positioned near the South Pole, and glaciers were forming in Antarctica, India,
+            Australia, southern Africa, and South America. The North China block collided with Siberia by Jurassic,
+            completely closing the Proto-Tethys Ocean.[37]
+
+            By the Early Permian, the Cimmerian plate split from Gondwana and headed towards Laurasia, thus closing the
+            Paleo-Tethys Ocean, but forming a new ocean, the Tethys Ocean, in its southern end. Most of the landmasses
+            were all in one. By the Triassic Period, Pangaea rotated a little, and the Cimmerian plate was still
+            travelling across the shrinking Paleo-Tethys until the Middle Jurassic. By the late Triassic, the
+            Paleo-Tethys had closed from west to east, creating the Cimmerian Orogeny. Pangaea, which looked like a C,
+            with the new Tethys Ocean inside the C, had rifted by the Middle Jurassic, and its deformation is explained
+            below.[38]
+          </p>
+        </section>
+      </section>
+      <section id="Life">
+        <header>
+          <h2>Life</h2>
+        </header>
+        <p>
+          Pangaea existed as a supercontinent for 160 million years, from its assembly around 335 million years ago
+          (Early Carboniferous) to its breakup 175 million years ago (Middle Jurassic).[3] During this interval,
+          important developments in the evolution of life took place. The seas of the Early Carboniferous were dominated
+          by rugose corals, brachiopods, bryozoans, sharks, and the first bony fish. Life on land was dominated by
+          lycopsid forests inhabited by insects and other arthropods and the first tetrapods.[39] By the time Pangaea
+          broke up, in the Middle Jurassic, the seas swarmed with molluscs (particularly ammonites),[40] ichthyosaurs,
+          sharks and rays, and the first ray-finned bony fishes, while life on land was dominated by forests of cycads
+          and conifers in which dinosaurs flourished and in which the first true mammals had appeared.[41][42]
+
+          The evolution of life in this time reflected the conditions created by the assembly of Pangaea. The union of
+          most of the continental crust into one landmass reduced the extent of sea coasts. Increased erosion from
+          uplifted continental crust increased the importance of floodplain and delta environments relative to shallow
+          marine environments. Continental assembly and uplift also meant increasingly arid land climates, favoring the
+          evolution of amniote animals and seed plants, whose eggs and seeds were better adapted to dry climates.[39]
+          The early drying trend was most pronounced in western Pangaea, which became a center of the evolution and
+          geographical spread of amniotes.[43]
+
+          Coal swamps typically form in perpetually wet regions close to the equator. The assembly of Pangaea disrupted
+          the intertropical convergence zone and created an extreme monsoon climate that reduced the deposition of coal
+          to its lowest level in the last 300 million years. During the Permian, coal deposition was largely restricted
+          to the North and South China microcontinents, which were among the few areas of continental crust that had not
+          joined with Pangaea.[44] The extremes of climate in the interior of Pangaea are reflected in bone growth
+          patterns of pareiasaurs and the growth patterns in gymnosperm forests.[45]
+
+
+          Early Triassic Lystrosaurus fossil from South Africa
+          The lack of oceanic barriers is thought to have favored cosmopolitanism, in which successful species attain
+          wide geographical distribution. Cosmopolitanism was also driven by mass extinctions, including the
+          Permian–Triassic extinction event, the most severe in the fossil record, and also the Triassic–Jurassic
+          extinction event. These events resulted in disaster fauna showing little diversity and high cosmopolitanism,
+          including Lystrosaurus, which opportunistically spread to every corner of Pangaea following the
+          Permian–Triassic extinction event.[46] On the other hand, there is evidence that many Pangaean species were
+          provincial, with a limited geographical range, despite the absence of geographical barriers. This may be due
+          to the strong variations in climate by latitude and season produced by the extreme monsoon climate.[47] For
+          example, cold-adapted pteridosperms (early seed plants) of Gondwana were blocked from spreading throughout
+          Pangaea by the equatorial climate, and northern pteridosperms ended up dominating Gondwana in the
+          Triassic.[48]
+        </p>
+        <section id="Mass_extinctions">
+          <header>
+            <h3>Mass extinctions</h3>
+          </header>
+          <p>
+            The tectonics and geography of Pangaea may have worsened the Permian–Triassic extinction event or other
+            extinctions. For example, the reduced area of continental shelf environments may have left marine species
+            vulnerable to extinction.[49] However, no evidence for a species-area effect has been found in more recent
+            and better characterized portions of the geologic record.[50][51] Another possibility is that reduced
+            sea-floor spreading associated with the formation of Pangaea, and the resulting cooling and subsidence of
+            oceanic crust, may have reduced the number of islands that could have served as refugia for marine species.
+            Species diversity may have already been reduced prior to mass extinction events due to mingling of species
+            possible when formerly separate continents were merged. However, there is strong evidence that climate
+            barriers continued to separate ecological communities in different parts of Pangaea. The eruptions of the
+            Emeishan Traps may have eliminated South China, one of the few continental areas not merged with Pangaea, as
+            a refugium.[52]
+          </p>
+        </section>
+      </section>
+      <section id="Rifting_and_break-up">
+        <header>
+          <h2>Rifting and break-up</h2>
+        </header>
+        <p>There were three major phases in the break-up of Pangaea.</p>
+        <section id="Opening_of_the_Atlantic">
+          <header>
+            <h3>Opening of the Atlantic</h3>
+          </header>
+          <p>
+            The Atlantic Ocean did not open uniformly; rifting began in the north-central Atlantic. The first breakup of
+            Pangaea is proposed for the late Ladinian (230 Ma) with initial spreading in the opening central Atlantic.
+            Then the rifting proceeded along the eastern margin of North America, the northwest African margin and the
+            High, Saharan and Tunisian Atlas.[53]
+
+            Another phase began in the Early-Middle Jurassic (about 175 Ma), when Pangaea began to rift from the Tethys
+            Ocean in the east to the Pacific Ocean in the west. The rifting that took place between North America and
+            Africa produced multiple failed rifts. One rift resulted in a new ocean, the North Atlantic Ocean.[20]
+
+            The South Atlantic did not open until the Cretaceous when Laurasia started to rotate clockwise and moved
+            northward with North America to the north, and Eurasia to the south. The clockwise motion of Laurasia led
+            much later to the closing of the Tethys Ocean and the widening of the "Sinus Borealis", which later became
+            the Arctic Ocean. Meanwhile, on the other side of Africa and along the adjacent margins of east Africa,
+            Antarctica and Madagascar, new rifts were forming that would lead to the formation of the southwestern
+            Indian Ocean that would open up in the Cretaceous.
+          </p>
+        </section>
+        <section id="Break-up_of_Gondwana">
+          <header>
+            <h3>Break-up of Gondwana</h3>
+          </header>
+          <p>
+            The second major phase in the break-up of Pangaea began in the Early Cretaceous (150–140 Ma), when the
+            landmass of Gondwana separated into multiple continents (Africa, South America, India, Antarctica, and
+            Australia). The subduction at Tethyan Trench probably caused Africa, India and Australia to move northward,
+            causing the opening of a "South Indian Ocean". In the Early Cretaceous, Atlantica, today's South America and
+            Africa, finally separated from eastern Gondwana (Antarctica, India and Australia). Then in the Middle
+            Cretaceous, Gondwana fragmented to open up the South Atlantic Ocean as South America started to move
+            westward away from Africa. The South Atlantic did not develop uniformly; rather, it rifted from south to
+            north.
+
+            Also, at the same time, Madagascar and India began to separate from Antarctica and moved northward, opening
+            up the Indian Ocean. Madagascar and India separated from each other 100–90 Ma in the Late Cretaceous. India
+            continued to move northward toward Eurasia at 15 centimeters (6 in) a year (a plate tectonic record),
+            closing the eastern Tethys Ocean, while Madagascar stopped and became locked to the African Plate. New
+            Zealand, New Caledonia and the rest of Zealandia began to separate from Australia, moving eastward toward
+            the Pacific and opening the Coral Sea and Tasman Sea.
+          </p>
+        </section>
+        <section id="Opening_of_the_Norwegian_Sea_and_break-up_of_Australia_and_Antarctica">
+          <header>
+            <h3>Opening of the Norwegian Sea and break-up of Australia and Antarctica</h3>
+          </header>
+          <p>
+            The third major and final phase of the break-up of Pangaea occurred in the early Cenozoic (Paleocene to
+            Oligocene). Laurasia split when North America/Greenland (also called Laurentia) broke free from Eurasia,
+            opening the Norwegian Sea about 60–55 Ma. The Atlantic and Indian Oceans continued to expand, closing the
+            Tethys Ocean.
+
+            Meanwhile, Australia split from Antarctica and moved quickly northward, just as India had done more than 40
+            million years before. Australia is currently on a collision course with eastern Asia. Both Australia and
+            India are currently moving northeast at 5–6 centimeters (2–3 in) a year. Antarctica has been near or at the
+            South Pole since the formation of Pangaea about 280 Ma. India started to collide with Asia beginning about
+            35 Ma, forming the Himalayan orogeny, and also finally closing the Tethys Seaway; this collision continues
+            today. The African Plate started to change directions, from west to northwest toward Europe, and South
+            America began to move in a northward direction, separating it from Antarctica and allowing complete oceanic
+            circulation around Antarctica for the first time. This motion, together with decreasing atmospheric carbon
+            dioxide concentrations, caused a rapid cooling of Antarctica and allowed glaciers to form. This glaciation
+            eventually coalesced into the kilometers-thick ice sheets seen today.[54] Other major events took place
+            during the Cenozoic, including the opening of the Gulf of California, the uplift of the Alps, and the
+            opening of the Sea of Japan. The break-up of Pangaea continues today in the Red Sea Rift and East African
+            Rift.
+          </p>
+        </section>
+        <section id="Climate_change_after_Pangaea">
+          <header>
+            <h3>Climate change after Pangaea</h3>
+          </header>
+          <p>The breakup of Pangaea was accompanied by outgassing of large quantities of carbon dioxide from continental
+            rifts. This produced a Mesozoic CO2 High that contributed to the very warm climate of the Early
+            Cretaceous.[55] The opening of the Tethys Ocean also contributed to the warming of the climate.[56] The very
+            active mid-ocean ridges associated with the breakup of Pangaea raised sea levels to the highest in the
+            geological record, flooding much of the continents.[57]
+
+            The expansion of the temperate climate zones that accompanied the breakup of Pangaea may have contributed to
+            the diversification of the angiosperms.[58]</p>
+        </section>
+      </section>
+      <section id="See_also">
+        <header>
+          <h2>See also</h2>
+        </header>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/History_of_Earth">History of Earth</a></li>
+          <li>Potential future supercontinents:
+            <a href="https://en.wikipedia.org/wiki/Pangaea_Ultima">Pangaea Ultima</a>,
+            <a href="https://en.wikipedia.org/wiki/Novopangaea">Novopangaea</a>&
+            <a href="https://en.wikipedia.org/wiki/Amasia_(continent)">Amasia</a>
+          </li>
+          <li><a href="https://en.wikipedia.org/wiki/Supercontinent_cycle">Supercontinent cycle</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Wilson_Cycle">Wilson Cycle</a></li>
+        </ul>
+        <nav>
+          <a href="https://en.wikipedia.org/wiki/Wikipedia:Contents/Portals">Portals:</a>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Portal:Earth_sciences">Earth sciences</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Portal:Geography">Geography</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Portal:Africa">Africa</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Portal:Asia">Asia</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Portal:Australia">Australia</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Portal:Europe">Europe</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Portal:North_America">North America</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Portal:South_America">South America</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Portal:World">World</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section id="References">
+        <header>
+          <h2>References</h2>
+        </header>
+        <ol>
+          <li>"Pangaea". Lexico UK English Dictionary. Oxford University Press. Archived from the original on October
+            25, 2020.</li>
+          <li>"Pangea". Encyclopædia Britannica Inc. 2015.</li>
+          <li>Rogers, J.J.W.; Santosh, M. (2004), Continents and Supercontinents, Oxford: Oxford University Press, p.
+            146, ISBN 978-0-19-516589-0</li>
+          <li>"Pangaea". Online Etymology Dictionary.</li>
+          <li>Vergilius Mario, Publius. Georgicon, IV.462</li>
+          <li>Lucan. Pharsalia, I.679</li>
+          <li>Lewis, C.T. & al. "Pangaeus" in A Latin Dictionary. (New York), 1879.</li>
+          <li>Usener, H. Scholia in Lucani Bellum Civile, Vol. I. (Leipzig), 1869.</li>
+          <li>As "Pangaea", it appears in Greek mythology as a mountain battle site during the Titanomachia. As
+            "Pangaeus",
+            it was the name of a specific mountain range in southern Thrace. "Pangaea" also appears in Vergil's
+            Georgics[5] and Lucan's Pharsalia[6][7] The scholiast on Lucan glossed Pangaea id est totum terra—"Pangaea:
+            that is, all land"—as having received its name on account of its smooth terrain and unexpected fertility.[8]
+          </li>
+          <li>
+            Alfred Wegener: Die Entstehung der Kontinente. Dr. A. Petermann's Mitteilungen aus Justus Perthes'
+            Geographischer Anstalt, 58(1): Gotha 1912
+          </li>
+          <li>
+            See:
+            <ul>
+              <li>Wegener, Alfred, Die Entstehung der Kontinente und Ozeane, 2nd ed. (Braunschweig, Germany: F. Vieweg,
+                1920), p. 120: "Schon die Pangäa der Karbonzeit hatte so einen Vorderrand ... " [Already the Pangaea of
+                the Carboniferous era had such a leading edge ...] (In the 1922 edition, see p. 130.)</li>
+              <li>Wegener, A.; Krause, R.; Thiede, J. (2005). "Kontinental-Verschiebungen: Originalnotizen und
+                Literaturauszüge"(Continental drift: the original notes and quotations). Berichte zur Polar- und
+                Meeresforschung (Reports on Polar and Marine Research) 516. Alfred-Wegener-Institut: Bremerhaven, p. 4,
+                n. 2</li>
+            </ul>
+          </li>
+          <li>
+            Jaworski, Erich (1922). "Die A. Wegenersche Hypothese der Kontinentalverschiebung". Geologische Rundschau.
+            13
+            (3): 273–296. Bibcode:1922GeoRu..13..273J. doi:10.1007/bf01799790. S2CID 131160418.
+          </li>
+          <li>
+            Willem A. J. M. van Waterschoot van der Gracht (and 13 other authors): Theory of Continental Drift: a
+            Symposium of the Origin and Movements of Land-masses of both Inter-Continental and Intra-Continental, as
+            proposed by Alfred Wegener. X + 240 S., Tulsa, Oklahoma, United States, The American Association of
+            Petroleum
+            Geologists & London, Thomas Murby & Co.
+          </li>
+          <li>
+            Kearey, Philip; Klepeis, Keith A.; Vine, Frederick J. (2009). Global tectonics (3rd ed.). Oxford:
+            Wiley-Blackwell. p. 5. ISBN 978-1-4051-0777-8.
+          </li>
+          <li>
+            Holmes, A. (1 January 1931). "XVIII. Radioactivity and Earth Movements". Transactions of the Geological
+            Society of Glasgow. 18 (3): 559–606. doi:10.1144/transglas.18.3.559. S2CID 122872384.
+          </li>
+          <li>Kearey, Klepeis & Vine 2009, pp. 5–8.</li>
+          <li>Kearey, Klepeis & Vine 2009, p. 2.</li>
+          <li>
+            Bullard, Edward; Everett, J.E.; Smith, A. Gilbert (28 October 1965). "The fit of the continents around the
+            Atlantic". Philosophical Transactions of the Royal Society of London. Series A, Mathematical and Physical
+            Sciences. 258 (1088): 41–51. Bibcode:1965RSPTA.258...41B. doi:10.1098/rsta.1965.0020. S2CID 27169876.
+          </li>
+          <li>
+            Murck, Barbara W. and Skinner, Brian J. (1999) Geology Today: Understanding Our Planet, Study Guide, Wiley,
+            ISBN 978-0-471-32323-5
+          </li>
+          <li>Merali, Zeeya and Skinner, Brian J. (2009) Visualizing Earth Science, Wiley, ISBN 047174705X</li>
+          <li>Benton, M.J. (2005) Vertebrate Palaeontology. Third edition, Oxford, p. 25.</li>
+          <li>Kearey, Klepeis & Vine 2009, pp. 66–67.</li>
+          <li>
+            Torsvik, Trond H.; Cocks, L. Robin M. (2019). "The integration of palaeomagnetism, the geological record and
+            mantle tomography in the location of ancient continents". Geological Magazine. 156 (2): 242–260.
+            Bibcode:2019GeoM..156..242T. doi:10.1017/S001675681700098X. S2CID 135171534.
+          </li>
+          <li>
+            Pyron, R. Alexander (1 September 2014). "Biogeographic Analysis Reveals Ancient Continental Vicariance and
+            Recent Oceanic Dispersal in Amphibians". Systematic Biology. 63 (5): 779–797. doi:10.1093/sysbio/syu042.
+            PMID
+            24951557.
+          </li>
+          <li>
+            Torsvik, Trond H.; Cocks, L. Robin M. (2017). "2". Earth history and palaeogeography. Cambridge, United
+            Kingdom: Cambridge University Press. ISBN 9781107105324.
+          </li>
+          <li>
+            Zhao, Guochun; Cawood, Peter A.; Wilde, Simon A.; Sun, M. (2002). "Review of global 2.1–1.8 Ga orogens:
+            implications for a pre-Rodinia supercontinent". Earth-Science Reviews. 59 (1–4): 125–162.
+            Bibcode:2002ESRv...59..125Z. doi:10.1016/S0012-8252(02)00073-9.
+          </li>
+          <li>
+            Zhao, Guochun; Sun, M.; Wilde, Simon A.; Li, S.Z. (2004). "A Paleo-Mesoproterozoic supercontinent: assembly,
+            growth and breakup". Earth-Science Reviews. 67 (1–2): 91–123. Bibcode:2004ESRv...67...91Z.
+            doi:10.1016/j.earscirev.2004.02.003.
+          </li>
+          <li>
+            Li, Z.X.; Bogdanova, S.V.; Collins, A.S.; Davidson, A.; De Waele, B.; Ernst, R.E.; Fitzsimons, I.C.W.; Fuck,
+            R.A.; Gladkochub, D.P.; Jacobs, J.; Karlstrom, K.E.; Lu, S.; Natapov, L.M.; Pease, V.; Pisarevsky, S.A.;
+            Thrane, K.; Vernikovsky, V. (2007). "Assembly, configuration, and break-up history of Rodinia: A synthesis".
+            Precambrian Research. 160 (1–2): 179–210. Bibcode:2008PreR..160..179L. doi:10.1016/j.precamres.2007.04.021.
+          </li>
+          <li>
+            Torsvik, T. H. (30 May 2003). "GEOLOGY: Enhanced: The Rodinia Jigsaw Puzzle". Science. 300 (5624):
+            1379–1381.
+            doi:10.1126/science.1083469. PMID 12775828. S2CID 129275224.
+          </li>
+          <li>Torsvik & Cocks 2017, pp. 78–83.</li>
+          <li>
+            Nance, R. Damian; Murphy, J. Brendan (2019). "Supercontinents and the case for Pannotia". Geological
+            Society,
+            London, Special Publications. 470 (1): 65–86. Bibcode:2019GSLSP.470...65N. doi:10.1144/SP470.5. S2CID
+            134018369.
+          </li>
+          <li>
+            Stanley, Steven M. (1999). Earth System History. New York: W.H. Freeman and Company. pp. 355–359. ISBN
+            0-7167-2882-6.
+          </li>
+          <li>Stanley 1999, pp. 386–392.</li>
+          <li>Torsvik & Cocks 2017, pp. 125, 153.</li>
+          <li>Torsvik & Cocks 2017, pp. 140, 161.</li>
+          <li>
+            Otto-Bliesner, Bette L. (15 September 1993). "Tropical mountains and coal formation: A climate model study
+            of
+            the Westphalian (306 MA)". Geophysical Research Letters. 20 (18): 1947–1950. Bibcode:1993GeoRL..20.1947O.
+            doi:10.1029/93GL02235.
+          </li>
+          <li>Torsvik & Cocks 2017, pp. 161, 171–172, 237.</li>
+          <li>Torsvik & Cocks 2017, pp. 180–181, 198.</li>
+          <li>"Life of the Carboniferous". UC Museum of Paleontology. UC Berkeley. Retrieved 19 February 2021.</li>
+          <li>
+            Erwin, D.H. (1990). "The end-Permian mass extinction". Annual Review of Ecology and Systematics. 21 (1):
+            69–91. doi:10.1146/annurev.es.21.110190.000441. JSTOR 2097019.
+          </li>
+          <li>"Jurassic Period: Life". UC Museum of Paleontology. UC Berkeley. Retrieved 19 February 2021.</li>
+          <li>Levin, Harold L. (2010). The earth through time (9th ed.). Hoboken, N.J.: J. Wiley. ISBN 978-0470387740.
+          </li>
+          <li>
+            Pardo, Jason D.; Small, Bryan J.; Milner, Andrew R.; Huttenlocker, Adam K. (February 2019).
+            "Carboniferous–Permian climate change constrained early land vertebrate radiations". Nature Ecology &
+            Evolution. 3 (2): 200–206. doi:10.1038/s41559-018-0776-z. PMID 30664698. S2CID 58572291.
+          </li>
+          <li>
+            Ziegler, Alfred; Eshel, Gidon; Rees, P. McALLISTER; Rothfus, Thomas; Rowley, David; Sunderlin, David
+            (September 2003). "Tracing the tropics across land and sea: Permian to present". Lethaia. 36 (3): 227–254.
+            doi:10.1080/00241160310004657.
+          </li>
+          <li>
+            Looy, Cindy V.; Ranks, Stephanie L.; Chaney, Dan S.; Sanchez, Sophie; Steyer, Jean-Sébastien; Smith, Roger
+            M.H.; Sidor, Christian A.; Myers, Timothy S.; Ide, Oumarou; Tabor, Neil J. (June 2016). "Biological and
+            physical evidence for extreme seasonality in central Permian Pangea". Palaeogeography, Palaeoclimatology,
+            Palaeoecology. 451: 210–226. Bibcode:2016PPP...451..210L. doi:10.1016/j.palaeo.2016.02.016.
+          </li>
+          <li>
+            Sahney, Sarda; Benton, Michael J (7 April 2008). "Recovery from the most profound mass extinction of all
+            time". Proceedings of the Royal Society B: Biological Sciences. 275 (1636): 759–765.
+            doi:10.1098/rspb.2007.1370. PMC 2596898. PMID 18198148.
+          </li>
+          <li>
+            Button, David J.; Lloyd, Graeme T.; Ezcurra, Martín D.; Butler, Richard J. (December 2017). "Mass
+            extinctions
+            drove increased global faunal cosmopolitanism on the supercontinent Pangaea". Nature Communications. 8 (1):
+            733. Bibcode:2017NatCo...8..733B. doi:10.1038/s41467-017-00827-7. PMC 5635108. PMID 29018290.
+          </li>
+          <li>Erwin 1990, p. 75.</li>
+          <li>
+            Simberloff, Daniel S. (March 1974). "Permo-Triassic Extinctions: Effects of Area on Biotic Equilibrium". The
+            Journal of Geology. 82 (2): 267–274. Bibcode:1974JG.....82..267S. doi:10.1086/627962. S2CID 128878541.
+          </li>
+          <li>
+            Hansen, Thor A. (1987). "Extinction of Late Eocene to Oligocene Molluscs: Relationship to Shelf Area,
+            Temperature Changes, and Impact Events". PALAIOS. 2 (1): 69–75. Bibcode:1987Palai...2...69H.
+            doi:10.2307/3514573. JSTOR 3514573.
+          </li>
+          <li>Erwin 1990, p. 83.</li>
+          <li>Erwin 1990, pp. 83–84.</li>
+          <li>
+            Antonio Schettino, Eugenio Turco: Breakup of Pangaea and plate kinematics of the central Atlantic and Atlas
+            regions. In: Geophysical Journal International, Band 178, Ausgabe 2, August 2009, S. 1078–1097.
+          </li>
+          <li>
+            Deconto, Robert M.; Pollard, David (2003). "Rapid Cenozoic glaciation of Antarctica induced by declining
+            atmospheric CO2" (PDF). Nature. 421 (6920): 245–9. Bibcode:2003Natur.421..245D. doi:10.1038/nature01290.
+            PMID
+            12529638. S2CID 4326971.
+          </li>
+          <li>
+            Brune, Sascha; Williams, Simon E.; Müller, R. Dietmar (December 2017). "Potential links between continental
+            rifting, CO2 degassing and climate change through time". Nature Geoscience. 10 (12): 941–946.
+            Bibcode:2017NatGe..10..941B. doi:10.1038/s41561-017-0003-6. S2CID 135097410.
+          </li>
+          <li>Stanley 1999, pp. 480–482.</li>
+          <li>
+            Dixon, Dougal; Benton, M J; Kingsley, Ayala; Baker, Julian (2001). Atlas of Life on Earth. New York: Barnes
+            &
+            Noble Books. p. 215. ISBN 9780760719572.
+          </li>
+          <li>
+            Chaboureau, Anne-Claire; Sepulchre, Pierre; Donnadieu, Yannick; Franc, Alain (30 September 2014).
+            "Tectonic-driven climate change and the diversification of angiosperms". Proceedings of the National Academy
+            of Sciences. 111 (39): 14066–14070. Bibcode:2014PNAS..11114066C. doi:10.1073/pnas.1324002111. PMC 4191762.
+            PMID 25225405.
+          </li>
+        </ol>
+      </section>
+      <section id="External_links">
+        <header>
+          <h2>External links</h2>
+        </header>
+        <div>
+          <div>
+            <figure>
+              <img src="./static/svgs/commons-logo.webp"
+                   alt="">
+              <figcaption>
+                Wikimedia Commons has media related to
+                <a href="https://commons.wikimedia.org/wiki/Category:Pangea">Pangaea</a>.
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./static/svgs/wiktionary-logo.webp"
+                   alt="">
+              <figcaption>Look up
+                <a href="https://en.wiktionary.org/wiki/Pangaea">Pangaea</a>
+                in Wiktionary, the free dictionary.
+              </figcaption>
+            </figure>
+          </div>
+          <ul>
+            <li><a href="https://pubs.usgs.gov/publications/text/historical.html">USGS Overview</a></li>
+            <li><a href="http://www.scotese.com/newpage8.htm">Map of Triassic Pangaea at Paleomaps</a></li>
+            <li>
+              <a href="http://www.nhm.ac.uk/visit-us/galleries/red-zone/earths-treasury/index.html">NHM Gallery</a>
+            </li>
+          </ul>
+          <section>
+            <header>
+              <nav>
+                <ul>
+                  <li>
+                    <a href="https://en.wikipedia.org/wiki/Template:Continents_of_Earth">V</a>
+                  </li>
+                  <li>
+                    <a href="https://en.wikipedia.org/wiki/Template_talk:Continents_of_Earth">T</a>
+                  </li>
+                  <li>
+                    <a href="https://en.wikipedia.org/w/index.php?title=Template:Continents_of_Earth&action=edit">
+                      E
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <h4>
+                <a href="https://en.wikipedia.org/wiki/Continent">Continents</a>
+                of
+                <a href="https://en.wikipedia.org/wiki/Earth">Earth</a>
+              </h4>
+              [<button>hide</button>]
+            </header>
+            <section>
+              <nav>
+                <ul>
+                  <li>
+                    <figure>
+                      <a href="https://en.wikipedia.org/wiki/Africa">
+                        <img src="./static/svgs/maps/africa.png"
+                             alt="">
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Africa">
+                        <figcaption>Africa</figcaption>
+                      </a>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="https://en.wikipedia.org/wiki/Antarctica">
+                        <img src="./static/svgs/maps/antarctica.png"
+                             alt="">
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Antarctica">
+                        <figcaption>Antarctica</figcaption>
+                      </a>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="https://en.wikipedia.org/wiki/Asia">
+                        <img src="./static/svgs/maps/asia.png"
+                             alt="">
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Asia">
+                        <figcaption>Asia</figcaption>
+                      </a>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="https://en.wikipedia.org/wiki/Australia_(continent)">
+                        <img src="./static/svgs/maps/australia.png"
+                             alt="">
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Australia_(continent)">
+                        <figcaption>Australia</figcaption>
+                      </a>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="https://en.wikipedia.org/wiki/Europe">
+                        <img src="./static/svgs/maps/europe.png"
+                             alt="">
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Europe">
+                        <figcaption>Europe</figcaption>
+                      </a>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="https://en.wikipedia.org/wiki/North_America">
+                        <img src="./static/svgs/maps/north-america.png"
+                             alt="">
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/North_America">
+                        <figcaption>North America</figcaption>
+                      </a>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="https://en.wikipedia.org/wiki/South_America">
+                        <img src="./static/svgs/maps/south-america.png"
+                             alt="">
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/South_America">
+                        <figcaption>South America</figcaption>
+                      </a>
+                    </figure>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+            <section>
+              <nav>
+                <ul>
+                  <li>
+                    <figure>
+                      <a href="https://en.wikipedia.org/wiki/Afro-Eurasia">
+                        <img src="./static/svgs/maps/afro-eurasia.png"
+                             alt="">
+                      </a>
+                      <figcaption>
+                        <a href="https://en.wikipedia.org/wiki/Afro-Eurasia">Afro-Eurasia</a>
+                        (<a href="https://en.wikipedia.org/wiki/Old_World">Old World</a>)
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="https://en.wikipedia.org/wiki/Americas">
+                        <img src="./static/svgs/maps/america.png"
+                             alt="">
+                      </a>
+                      <figcaption>
+                        <a href="https://en.wikipedia.org/wiki/Americas">America</a>
+                        (<a href="https://en.wikipedia.org/wiki/New_World">New World</a>)
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="https://en.wikipedia.org/wiki/Eurasia">
+                        <img src="./static/svgs/maps/eurasia.png"
+                             alt="">
+                      </a>
+                      <figcaption>
+                        <a href="https://en.wikipedia.org/wiki/Eurasia">Eurasia</a>
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="https://en.wikipedia.org/wiki/Oceania">
+                        <img src="./static/svgs/maps/oceania.png"
+                             alt="">
+                      </a>
+                      <figcaption>
+                        <a href="https://en.wikipedia.org/wiki/Oceania">Oceania</a>
+                      </figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+            <section>
+              <section>
+                <h5>Prehistoric <a href="https://en.wikipedia.org/wiki/Supercontinent">supercontinents</a></h5>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Columbia_(supercontinent)">Columbia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Gondwana">Gondwana</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kenorland">Kenorland</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Laurasia">Laurasia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Nena_(supercontinent)">Nena</a></li>
+                  <li>Pangaea</li>
+                  <li><a href="https://en.wikipedia.org/wiki/Pannotia">Pannotia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Rodinia">Rodinia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Ur_(continent)">Ur</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Vaalbara">Vaalbara</a></li>
+                </ul>
+              </section>
+              <section>
+                <h5>Other prehistoric continents</h5>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Amazonian_Craton">Amazonia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Arctica">Arctica</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Asiamerica">Asiamerica</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Atlantica">Atlantica</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Avalonia">Avalonia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Baltica">Baltica</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Chilenia">Chilenia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Cimmeria_(continent)">Cimmeria</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Congo_Craton">Congo Craton</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Cuyania">Cuyania</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/East_Antarctic_Shield">East Antarctica</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Laurasia#Laurussia">Euramerica</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kalahari_Craton">Kalaharia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kazakhstania">Kazakhstania</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Laramidia">Laramidia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Laurentia">Laurentia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/North_China_Craton">North China</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Pampia">Pampia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Sahul">Sahul</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Siberia_(continent)">Siberia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/South_China_Craton">South China</a></li>
+                </ul>
+              </section>
+            </section>
+            <section>
+              <section>
+                <h5>
+                  <a href="https://en.wikipedia.org/wiki/Submerged_continent">Submerged continent</a>
+                  /
+                  <a href="https://en.wikipedia.org/wiki/Continental_shelf">lands</a>
+                  and
+                  <a href="https://en.wikipedia.org/wiki/Continental_fragment">microcontinents</a>
+                </h5>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Beringia">Beringia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Doggerland">Doggerland</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Jan_Mayen_Microcontinent">Jan Mayen</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kerguelen_Plateau">Kerguelen Plateau</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Madagascar">Madagascar</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Mauritia_(microcontinent)">Mauritia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Sahul_Shelf">Sahul</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Seychelles_Microcontinent">Seychelles</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Sunda_Shelf">Sunda</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Zealandia">Zealandia</a></li>
+                </ul>
+              </section>
+              <section>
+                <h5>Possible future supercontinents</h5>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Amasia_(continent)">Amasia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Aurica_(supercontinent)">Aurica</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Novopangaea">Novopangaea</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Pangaea_Proxima">Pangaea Proxima</a></li>
+                </ul>
+              </section>
+              <section>
+                <h5>
+                  <a href="https://en.wikipedia.org/wiki/List_of_mythological_places">Mythical</a>
+                  ,
+                  <a href="https://en.wikipedia.org/wiki/List_of_lost_lands">lost</a>
+                  , and
+                  <a href="https://en.wikipedia.org/wiki/Phantom_island">hypothesised</a>
+                  continents
+                </h5>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Atlantis">Atlantis</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Hyperborea">Hyperborea</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kumari_Kandam">Kumari Kandam</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Lemuria">Lemuria</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Meropis">Meropis</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Mu_(mythical_lost_continent)">Mu</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Terra_Australis">Terra Australis</a></li>
+                </ul>
+              </section>
+              <section>
+                <h5><a href="https://en.wikipedia.org/wiki/Continent#Subcontinents">Subcontinents</a></h5>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Alaska">Alaska</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Arabian_Peninsula">Arabia</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Central_America">Central America</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Greenland">Greenland</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Indian_subcontinent">Indian Subcontinent</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Southern_Cone">Southern Cone</a></li>
+                </ul>
+              </section>
+            </section>
+            <section>
+              <h5>See also:</h5>
+              <ul>
+                <li>
+                  <a href="https://en.wikipedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg">
+                    <img src="./static/svgs/world-icon.webp"
+                         alt="">
+                  </a>
+                  <a href="https://en.wikipedia.org/wiki/Portal:World">World portal</a>
+                </li>
+                <li>
+                  <a href="https://en.wikipedia.org/wiki/Template:Regions_of_the_world">Regions of the world</a>
+                </li>
+                <li>
+                  <a href="https://en.wikipedia.org/wiki/Continental_fragment">Continental fragment</a>
+                </li>
+                <li>
+                  <img src="./static/svgs/category-icon.webp"
+                       alt="">
+                  <a href="https://en.wikipedia.org/wiki/Category:Continents">Category</a>
+                </li>
+                <li>
+                  <a href="https://en.wikipedia.org/wiki/List_of_continents_by_age">List of continents by age</a>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h5>
+                <a href="https://en.wikipedia.org/wiki/Help:Authority_control">Authority control</a>
+                : National
+                <a href="https://www.wikidata.org/wiki/Q4398#identifiers">
+                  <img src="./static/svgs/edit-icon.webp"
+                       alt="">
+                </a>
+              </h5>
+              <ul>
+                <li><a href="https://catalogue.bnf.fr/ark:/12148/cb12500043k">France</a></li>
+                <li><a href="https://data.bnf.fr/ark:/12148/cb12500043k">BnF data</a></li>
+                <li>
+                  <a
+                     href="http://uli.nli.org.il/F/?func=find-b&local_base=NLX10&find_code=UID&request=987007551339305171">
+                    Israel
+                  </a>
+                </li>
+                <li><a href="https://id.loc.gov/authorities/subjects/sh89003758">United States</a></li>
+              </ul>
+            </section>
+          </section>
+          <nav>
+            <ul>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Help:Category">Categories:</a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Category:Carboniferous_paleogeography">
+                  Carboniferous paleogeography
+                </a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Category:Former_supercontinents">Former supercontinents</a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Category:Historical_continents">Historical continents</a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Category:Jurassic_paleogeography">Jurassic paleogeography</a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Category:Permian_paleogeography">Permian paleogeography</a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Category:Plate_tectonics">Plate tectonics</a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Category:Triassic_paleogeography">Triassic paleogeography</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </article>
+  </main>
+  <hr>
+  <footer class="page-footer">
+    <p class="page-footer__edition-date">This page was last edited on 8 April 2023, at 09:36 (UTC).</p>
+    <p class="page-footer__copyright">
+      Text is available under the <a
+         href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">
+        Creative Commons Attribution-ShareAlike License 3.0</a>; additional terms may apply. By using this site, you
+      agree to the <a href="https://foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a
+         href="https://foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia<sup>®</sup> is a
+      registered trademark of the <a href="https://www.wikimediafoundation.org/"> Wikimedia Foundation, Inc.</a>, a
+      non-profit organization.
+    </p>
+    <nav class="page-footer__nav">
+      <ul>
+        <li><a href="https://foundation.wikimedia.org/wiki/Privacy_policy">Privacy policy</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+        <li>
+          <a href="https://en.m.wikipedia.org/w/index.php?title=Pangaea&mobileaction=toggle_view_mobile">Mobile view</a>
+        </li>
+        <li><a href="https://developer.wikimedia.org/">Developers</a></li>
+        <li><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+        <li><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+        <li>
+          <button>
+            <img src="./static/svgs/wikimedia-project.png"
+                 height="31px"
+                 width="88px"
+                 alt="">
+          </button>
+        </li>
+        <li>
+          <button>
+            <img src="./static/svgs/poweredby_mediawiki.png"
+                 height="31px"
+                 width="88px"
+                 alt="">
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

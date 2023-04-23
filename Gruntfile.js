@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
   grunt.initConfig({
     watch: {
-      files: ["./index.html", "./style.css"],
+      files: ["./index.html", "./styles/*", "./static/svgs/*", "./js/*"],
       options: {
         livereload: true,
       },

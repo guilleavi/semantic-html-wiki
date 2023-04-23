@@ -1,0 +1,20 @@
+/* TODO: remove */
+:root {
+  --temp-width: 410px;
+}
+
+#page-nav {
+  height: 97px;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  width: var(--temp-width);
+}
+
+article {
+  width: 100%; /* calc(100vw - var(--temp-width)); */
+}

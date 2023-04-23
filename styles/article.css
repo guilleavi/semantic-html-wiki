@@ -1,0 +1,61 @@
+#article-header {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--border-bottom-color);
+}
+
+#article-header__icon {
+  display: none; /* flex; */
+  flex-basis: 8%;
+  justify-content: center;
+}
+
+#article-header__icon:hover {
+  background-color: var(--hover-gray);
+}
+
+#article-header__title {
+  flex-grow: 1;
+
+  font-family: "Linux Libertine";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.375;
+}
+
+#article-header__languages-select {
+  color: var(--select-color);
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.2857125;
+}
+
+#article-header__languages-select:hover {
+  background-color: var(--hover-bg-blue);
+  border-radius: 3px;
+  color: var(--hover-blue);
+}
+
+#article-nav ul {
+  list-style: none;
+  display: flex;
+
+  padding: 12px 0 7px;
+
+  color: var(--list-text-color);
+  font-size: 13px;
+}
+
+#article-nav ul li {
+  padding-right: 16px;
+}
+
+#article-nav ul li:last-child {
+  padding-right: 0;
+}
+
+#article-nav ul li:nth-child(2) {
+  flex-basis: 100%;
+}

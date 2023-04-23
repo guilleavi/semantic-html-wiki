@@ -1,0 +1,9 @@
+- Semantic HTML
+- Accessibility
+- Vanilla JS
+- CSS with BEM
+- Attributes order html
+- Property order CSS
+- LightHouse
+- Image formats
+- i18n
